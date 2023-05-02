@@ -19,15 +19,33 @@
  *
  * @link http://codex.wordpress.org/Child_Themes
  */
-function oceanwp_child_enqueue_parent_style() {
 
-	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update the theme).
-	$theme   = wp_get_theme( 'OceanWP' );
-	$version = $theme->get( 'Version' );
 
-	// Load the stylesheet.
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
-	
+function ocean_child_Support() {
+	add_theme_support('menus');
+	register_nav_menu('header','main');
+	register_nav_menu('footer', 'Pied de page');
 }
 
-add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+function montheme_menu_class(array $classes): array
+{ $classes[] = 'nav-item';
+return $classes;	
+}
+
+function montheme_menu_link_class(array $attrs): array 
+{
+    $sattrs['class'] = 'nav-link';
+    return $attrs;
+}
+
+
+add_filter('nav_menu_css_class', 'montheme_menu_class');
+add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
+add_filter('nav_menu_css_class','montheme_menu_class');
+
+add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+function theme_enqueue_styles()
+{
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/theme.css', array(), filemtime(get_stylesheet_directory() . '/theme.css'));
+}
