@@ -14,6 +14,10 @@
   justify-content: space-between;  
 }
 
+#menu-item-1067 a{
+  color:white;
+}
+
 #site-header {
   background-color: red;
 }
@@ -28,8 +32,8 @@
     align-items: center;
   }
   
-  .input {
-    width: 51px;
+ .input-info {
+    width: 20%;
     height: 56px;
     font-size: 16px;
     text-align: center;
@@ -39,6 +43,15 @@
     background-color: white;
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
+  }
+
+  .quantity {
+    border:inherit;
+
+  }
+  
+  form input[type=number] {
+    color:#E0B9B4;
   }
 
   .quantity-btn-group {
@@ -92,7 +105,7 @@
   }
   
   .quantity-ok {
-    width: 100px;
+    width: 180%;
     height: 56px;
     font-size: 16px;
     font-weight: bold;
@@ -115,4 +128,18 @@
 
   }
 
+ 
+  /* Pour les tablettes en mode paysage */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+  }
   
+  /* Pour les tablettes et téléphones en mode portrait */
+  @media only screen and (max-width: 767px) {
+    
+  }
+  
+  /* Pour les téléphones en mode portrait à partir de 320 pixels */
+  @media only screen and (max-width: 320px) {
+    
+  }
