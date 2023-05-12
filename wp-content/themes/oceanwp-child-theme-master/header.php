@@ -22,12 +22,14 @@
 	<?php do_action( 'ocean_before_outer_wrap' ); ?>
 
 	<div id="outer-wrap" class="site clr">
+	
 
 		<a class="skip-link screen-reader-text" href="#main"><?php echo esc_html( oceanwp_theme_strings( 'owp-string-header-skip-link', false ) ); ?></a>
 
 		<?php do_action( 'ocean_before_wrap' ); ?>
 
 		<div id="wrap" class="clr">
+
 
 			<?php do_action( 'ocean_top_bar' ); ?>
 
@@ -37,4 +39,4 @@
 
 			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
 
-				<?php do_action( 'ocean_page_header' ); ?>
+				

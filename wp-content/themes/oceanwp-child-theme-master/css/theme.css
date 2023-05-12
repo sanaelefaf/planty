@@ -6,7 +6,7 @@
 }
 #navbarNav{
     display:flex;
-    margin-left: 70%;
+    margin-left: 0%;
 }
 
 .navbar-nav {
@@ -32,7 +32,7 @@
     align-items: center;
   }
   
- .input-info {
+ .quantity {
     width: 20%;
     height: 56px;
     font-size: 16px;
@@ -44,11 +44,13 @@
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
   }
-
-  .quantity {
+ 
+  #quantity-btn {
     border:inherit;
-
+    padding-bottom: 10px;
+    text-align: center;
   }
+  
   
   form input[type=number] {
     color:#E0B9B4;
@@ -63,13 +65,13 @@
   .quantity-btn-group p {
     display: flex;
   }
+
   .quantity-btn {
     width: 30px;
     height: 25px;
     font-weight: bold;
     text-align: center;
     color: white;
-    background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -128,18 +130,11 @@
 
   }
 
+  #content-wrap{
+    padding-top:0px;
+  }
+
  
-  /* Pour les tablettes en mode paysage */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-  }
   
-  /* Pour les tablettes et téléphones en mode portrait */
-  @media only screen and (max-width: 767px) {
-    
-  }
-  
-  /* Pour les téléphones en mode portrait à partir de 320 pixels */
-  @media only screen and (max-width: 320px) {
-    
-  }
+    #menu-item-1071 href { 
+    color:white; }
