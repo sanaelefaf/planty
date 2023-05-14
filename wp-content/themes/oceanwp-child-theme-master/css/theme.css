@@ -151,8 +151,13 @@
 }
 
 .wpforms-container-full button[type=submit] {
+background-color: #E0B9B4;
 height: 55px;
 width: 198px;
+}
+
+.div.wpforms-container-full input[type=submit]:not(:hover):not(:active), div.wpforms-container-full button[type=submit]:not(:hover):not(:active), div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+  background-color: #E0B9B4 !important;
 }
 
 .wpforms-container-full .wpforms-form .wpforms-submit-container {
