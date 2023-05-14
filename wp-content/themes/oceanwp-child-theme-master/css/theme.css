@@ -29,7 +29,9 @@
 
 .quantity-button {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
   }
   
  .quantity {
@@ -87,7 +89,7 @@
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     width: 35px;
-    height: 31px;
+    height: 30px;
     border-top: 1px solid white;
   }
   
@@ -98,7 +100,7 @@
     border-top-left-radius: inherit;
     border-bottom-right-radius: inherit;
     width: 35px;
-    height: 31px;
+    height: 30px;
   }
   
   .quantity-btn-group p {
@@ -107,7 +109,7 @@
   }
   
   .quantity-ok {
-    width: 180%;
+    width: 265%;
     height: 56px;
     font-size: 16px;
     font-weight: bold;
@@ -121,7 +123,9 @@
   }
 
   .quantity-ok:hover {
-    background-color: red;
+    background-color:#C02E44;
+    color: white;
+    ;
   }
 
  .elementor-widget-wrap.elementor-element-populated input {
@@ -136,5 +140,27 @@
 
  
   
-    #menu-item-1071 href { 
-    color:white; }
+#site-navigation-wrap .dropdown-menu #menu-item-1067 .menu-link {
+      color:white;
+
+    }
+
+.elementor-355 .elementor-element.elementor-element-d67b13c .elementor-button {
+  width: 198px;
+  height: 55px;
+}
+
+.wpforms-container-full button[type=submit] {
+height: 55px;
+width: 198px;
+}
+
+.wpforms-container-full .wpforms-form .wpforms-submit-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
