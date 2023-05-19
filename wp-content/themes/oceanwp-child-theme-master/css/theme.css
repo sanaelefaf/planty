@@ -80,32 +80,40 @@
 
   
   .quantity-btn.quantity-plus {
-    background-color: #E0B9B4;
+    background-color: #DC9F96;
     margin-top: -15px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: inherit;
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     height: 30px;
+    width: 154%;
     border-top: 1px solid white;
   }
   
   .quantity-btn.quantity-minus {
-    background-color: #E0B9B4;
+    background-color: #DC9F96;
+    ;
     margin-bottom: -15px;
     border-top-right-radius: 5px;
     border-top-left-radius: inherit;
     border-bottom-right-radius: inherit;
     height: 30px;
+    width: 154%; 
   }
   
   .quantity-btn-group p {
     display: flex;
     flex-direction: column;
+
+  }
+
+  .btn-group {
+   margin-right:15%;
   }
   
   .quantity-ok {
-    width: 270%;
+    width: 250%;
     height: 56px;
     font-size: 16px;
     font-weight: bold;
