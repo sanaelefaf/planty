@@ -58,7 +58,7 @@ function ajouter_lien_admin_menu( $items, $args ) {
         $pos = strpos( $items, '<li id="menu-item-1067"' );
 
         // Ajout du lien "Admin" avant le lien "Commander"
-        $items = substr_replace( $items, '<li><a href="' . admin_url() . '">Admin</a></li>', $pos, 0 );
+        $items = substr_replace( $items, '<li class="admin-link"><a class="admin" href="' . admin_url() . '">Admin</a></li>', $pos, 0 );
     }
     return $items;
 }

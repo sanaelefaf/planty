@@ -5,6 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="profile" href="https://gmpg.org/xfn/11">
  <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
 
 </head>
 
