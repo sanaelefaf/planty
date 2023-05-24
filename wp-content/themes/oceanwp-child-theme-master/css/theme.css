@@ -245,9 +245,14 @@ align-items: center;
       position: initial;
       transform: initial;
     }
- 
 
-    @media (max-width: 768px){
+    .elementor-section.elementor-section-boxed > .elementor-container {
+      max-width: 920px;
+  }
+   
+
+
+    @media (min-width: 768px) {
 .elementor-column.elementor-col-25, .elementor-column[data-col="25"] {
     width: 50% !important;}
 
@@ -267,37 +272,17 @@ align-items: center;
 .elementor-column.elementor-col-33, .elementor-column[data-col="33"] {
   width: 33.333%;
 }
-.elementor-widget-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.elementor-section.elementor-section-boxed  .elementor-container {
-max-width: 1024px;
-display: flex;
-flex-direction: column;
-align-content: center;
-align-items: center;
-justify-content: center;
-}
+    }
 
-.elementor-406 .elementor-element.elementor-element-be8a655 .elementor-container {
- max-width: 1024px;
-display: flex;
-flex-direction: column;
-align-content: center;
-align-items: center;
-justify-content: center;
-}
 
-}
+  @media (max-width: 1024px) {
+    .elementor-355 .elementor-element.elementor-element-07c1b2d .elementor-container {
+        max-width: 1600px;
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+    }
+    
 
-@media (max-width: 1024px) {
-.elementor-355 .elementor-element.elementor-element-07c1b2d > .elementor-container {
-    max-width: 1600px;
-    display: flex;
-    align-content: space-around;
-    flex-direction: column;
-}
 }
