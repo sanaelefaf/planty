@@ -52,13 +52,14 @@ function theme_enqueue_styles()
 }
 
 add_filter( 'wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 2 );
+
 function ajouter_lien_admin_menu( $items, $args ) {
     if ( is_user_logged_in() && $args->theme_location == 'main_menu' ) {
         // Recherche de la position du lien "Commander"
         $pos = strpos( $items, '<li id="menu-item-1067"' );
 
         // Ajout du lien "Admin" avant le lien "Commander"
-        $items = substr_replace( $items, '<li class="admin-link"><a class="admin" href="' . admin_url() . '">Admin</a></li>', $pos, 0 );
+        $items = substr_replace( $items, '<li class="admin-link"><a class="admin" href="' . admin_url() . '"><span class="text-wrap">Admin</span></a></li>', $pos, 0 );
     }
     return $items;
 }
