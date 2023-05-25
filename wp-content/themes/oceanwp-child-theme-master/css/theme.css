@@ -26,20 +26,23 @@ body {
 
 }
 
-#menu-item-1067 a{
-  color:white;
-}
 
 #menu-item-1071{
   font-weight: bold;
 }
 
+#menu-item-1067 .menu-link .text-wrap {
+  color: white;
+} 
+
+
 #site-navigation-wrap .dropdown-menu .admin-link .admin {
 padding: 0 50px;
 font-family: 'Syne', sans-serif;
+color: transparent;
 
 }
-  font-size: 16px;
+
 
   .menu-link {
     color:white;
@@ -49,6 +52,7 @@ font-family: 'Syne', sans-serif;
   color: black;
   font-size: 16px;
 }
+
 #site-header {
   background-color: red;
 }
@@ -56,6 +60,7 @@ font-family: 'Syne', sans-serif;
 .custom-logo-link {
   color:white;
 }
+
 .input {
   border-color:white;
 
@@ -179,8 +184,13 @@ font-family: 'Syne', sans-serif;
 
  
   
-#site-navigation-wrap .dropdown-menu #menu-item-1067 .menu-link {
-      color:white;
+#site-navigation-wrap #menu-item-1067 .menu-link  {
+      color: transparent;
+
+    }
+
+#site-navigation-wrap #menu-item-1071 .menu-link  {
+      color: transparent;
 
     }
 
@@ -206,7 +216,23 @@ flex-wrap: wrap;
 align-content: center;
 justify-content: center;
 align-items: center;
+margin-right: 40px;
 }
+
+#wpforms-1207-field_0 {
+width: 383px;
+height: 71px
+}
+
+#wpforms-1207-field_1 {
+  width: 383px;
+  height: 71px
+  }
+
+  #wpforms-1207-field_7 {
+    width: 383px;
+    height: 237px
+    }
 
  .elementor-image-box-wrapper {
         position: relative;
@@ -339,13 +365,6 @@ align-items: center;
 
   }
 
-  #wpforms-1207-field_0 {
-    width: 88%;
-  }
-
-  #wpforms-1207-field_1 {
-    width: 88%;
-  }
 
   #wrap #main #content-wrap {
     padding-top: inherit;
