@@ -66,6 +66,7 @@ color: transparent;
 
 }
 
+/** BOUTON COMMANDER **/
 
 .quantity-button {
     display: flex;
@@ -88,7 +89,6 @@ color: transparent;
  
   #quantity-btn {
     border:inherit;
-    padding-bottom: 10px;
     text-align: center;
   }
   
@@ -172,6 +172,8 @@ color: transparent;
     ;
   }
 
+
+
  .elementor-widget-wrap.elementor-element-populated input {
    
     height: 74px;
@@ -253,7 +255,7 @@ height: 71px
         font-weight: bold;
     }
 
-
+   
     .elementor-355 .elementor-element.elementor-element-a25ea8a .elementor-image-box-title {
       position: initial;
       transform: initial;
@@ -310,6 +312,8 @@ height: 71px
   height:71px;
   margin-top: 13px;
 }
+
+/** Formulaire commande **/
 
   .form-column {
     display: flex;
@@ -370,6 +374,7 @@ height: 71px
     padding-top: inherit;
     padding-bottom: inherit;
   }
+
 
     @media (min-width: 768px) {
 .elementor-column.elementor-col-25, .elementor-column[data-col="25"] {
